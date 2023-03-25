@@ -3,10 +3,10 @@ import copy from "/copy.svg"
 export default function Entry({entry, element}){
     return(
         <article className="p-4 m-8 grid place-content-center">
-            <h2 className="text-4xl font-bold p-4">
+            <h2 className="text-4xl text-center md:text-left font-bold p-4">
                 {entry.title}
             </h2>
-            <div className=" grid md:grid-cols-3 md:max-w-3xl py-4">
+            <div className=" grid md:grid-cols-3 md:max-w-3xl text-center md:text-left py-4">
                 <div className="justify-self-center self-center">
                     {element}
                 </div>
