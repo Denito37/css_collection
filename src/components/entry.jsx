@@ -1,8 +1,7 @@
-import copy from "/copy.svg"
 
 export default function Entry({entry, element}){
     return(
-        <article className="p-4 m-8 grid place-content-center">
+        <article className="p-4 my-12 mx-6 grid place-content-center">
             <h2 className="text-4xl text-center md:text-left font-bold p-4">
                 {entry.title}
             </h2>
@@ -15,10 +14,9 @@ export default function Entry({entry, element}){
                 </p>
             </div>
             <code>
-            <pre className="p-4 mx-4 bg-slate-800 border-2 rounded-2xl max-w-sm sm:max-w-lg md:max-w-3xl h-72 overflow-scroll relative">
-                {entry.code}
-                <img className=" absolute top-0 right-0 p-2" src={copy} alt="" />
-            </pre>
+                <pre className="py-4 px-8 mx-4 bg-slate-800 border-2 rounded-2xl max-w-xs sm:w-full md:max-w-3xl h-72 overflow-scroll">
+                    {entry.code}
+                </pre>
             </code>
         </article>
     )

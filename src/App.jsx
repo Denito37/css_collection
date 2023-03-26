@@ -20,9 +20,8 @@ function App() {
   const [page, setPage] = useState('home')
 
   useEffect(() =>{
-    console.log(page)
+    //console.log(page)
   },[page])
-
 
   return (
     <div>
@@ -31,11 +30,8 @@ function App() {
       <Entry entry={buttons[1]} element = {<Add />} />
       <Entry entry={buttons[2]} element = {<Claim />} />
       <Entry entry={buttons[3]} element = {<Submit />} />
-      <Entry entry={tabs[0]} element={<Highlight />} />
-        <Entry entry={tabs[1]} element={<Bold />} />
-        <Entry entry={tabs[2]} element={<Underline />} />
-        <Entry entry={blocks[0]} element={<Info />} />
-        <Entry entry={blocks[1]} element={<Blur />} />
+      <Entry entry={blocks[0]} element={<Info />} />
+      <Entry entry={blocks[1]} element={<Blur />} />
       <Footer />
     </div>
   )
