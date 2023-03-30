@@ -14,7 +14,7 @@ export default function Entry({entry, element}){
                 </p>
             </div>
             <code>
-                <pre className="py-4 px-8 mx-4 bg-slate-800 border-2 rounded-2xl max-w-xs sm:w-full md:max-w-3xl h-72 overflow-scroll">
+                <pre className="py-4 px-8 mx-4 bg-slate-800 border-2 rounded-2xl max-w-sm  sm:w-full md:max-w-3xl h-72 overflow-scroll">
                     {entry.code}
                 </pre>
             </code>

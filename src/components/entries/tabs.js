@@ -46,10 +46,4 @@ export const tabs = [
     left: 0;
 }`,
     },
-    {
-        id:4,
-        title:"",
-        description:``,
-        code: ``,
-    },
 ]

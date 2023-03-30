@@ -36,16 +36,4 @@ export const blocks = [
     filter: blur(0px) sepia(0%);
 }`,
     },
-    {
-        id:3,
-        title:"",
-        description:``,
-        code: ``,
-    },
-    {
-        id:4,
-        title:"",
-        description:``,
-        code: ``,
-    },
 ]
