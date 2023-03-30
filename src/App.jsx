@@ -1,7 +1,7 @@
 import { buttons } from './components/entries/buttons.js'
 import { tabs } from './components/entries/tabs.js'
 import { blocks } from './components/entries/blocks.js'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Header from './components/header'
 import Purpose from './components/home'
 import Entry from './components/entry'
@@ -10,6 +10,7 @@ import Trash from './components/element/buttons/trash.jsx'
 import Add from './components/element/buttons/add.jsx'
 import Claim from './components/element/buttons/claim.jsx'
 import Submit from './components/element/buttons/submit.jsx'
+import Cta from './components/element/buttons/cta.jsx'
 import Highlight from './components/element/tabs/highlight.jsx'
 import Bold from './components/element/tabs/bold.jsx'
 import Underline from './components/element/tabs/underline.jsx'
@@ -19,7 +20,7 @@ import Blur from './components/element/blocks/blur.jsx'
 function App() {
   const [page, setPage] = useState('home')
   let list
-  const btnElementArray = [<Trash />, <Add />, <Claim />, <Submit />]
+  const btnElementArray = [<Trash />, <Add />, <Claim />, <Submit />, <Cta />]
   const tabElementArray = [<Highlight />,<Bold />,<Underline />] 
   const blockElementArray = [<Info />,<Blur />]
 
@@ -42,10 +43,10 @@ if(page === 'tabs'){list = tabList}
     <div>
       <Header />
       <div className=" grid grid-cols-4 p-2 mx-auto md:max-w-lg justify-items-center">
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-500" onClick={() => setPage('home')}>Home</button>
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-500" onClick={() => setPage('buttons')}>Buttons</button>
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-500" onClick={() => setPage('blocks')}>Blocks</button>
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-500" onClick={() => setPage('tabs')}>Tabs</button>
+      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('home')}>Home</button>
+      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('buttons')}>Buttons</button>
+      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('blocks')}>Blocks</button>
+      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('tabs')}>Tabs</button>
       </div>
       <hr />
       {list}
