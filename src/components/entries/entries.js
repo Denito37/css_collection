@@ -183,7 +183,7 @@ export const errs = [
         code:`
 .errBlock{
     padding: 0.5rem;
-    background-color:#;
+    background-color: rgb(254 202 202);
     border: 2px solid red;
     border-radius: 1rem;
     display:grid;
@@ -191,11 +191,11 @@ export const errs = [
 }
 .errBtn{
     font-size: 1.25rem;
-    color:#;
+    color: rgb(153 27 27);
 }
 .errMsg{
     font-size: 1.5rem;
-    color:#;
+    color: rgb(239 68 68);
     grid-column: span 5/span 5;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -223,5 +223,33 @@ export const loading = [
 .animate-spin {
     animation: spin 1s linear infinite;
 }`,
+    },
+    {
+        id:2,
+        title:`Skeleton Loading`,
+        description:`A calming visual to have for the user as the components load in. The skeleton layout should match your website's layout.`,
+        code:`
+.container{
+    display: grid;
+    gap: 1rem;
+}
+.mainBox{
+    padding: 3rem;
+    background-color: rgb(156 163 175);
+    border-radius: 1rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.paragraphBox{
+    padding: 0.5rem
+    background-color: rgb(156 163 175);
+    border-radius: 1rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}
+        `,
     },
 ]

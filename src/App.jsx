@@ -15,6 +15,7 @@ import Underline from './components/element/tabs/underline.jsx'
 import Info from './components/element/blocks/info.jsx'
 import Blur from './components/element/blocks/blur.jsx'
 import Spinner from './components/element/loads/spinner.jsx'
+import Skeleton from './components/element/loads/skeleton.jsx'
 import NotFound from './components/element/errs/notFound.jsx'
 
 function App() {
@@ -22,12 +23,12 @@ function App() {
   const [active, setActive] = useState('home')
   let list
   let key = 0;
-  const sections = ['home','buttons','blocks','tabs','errors','loading']
+  const sections = ['home','buttons','images','tabs','errors','loading']
   const btnElementArray = [<Trash />, <Add />, <Claim />, <Submit />, <Cta />]
   const tabElementArray = [<Highlight />,<Bold />,<Underline />] 
   const blockElementArray = [<Info />,<Blur />]
   const errElementArray = [<NotFound />,]
-  const loadElementArray = [<Spinner />,]
+  const loadElementArray = [<Spinner />, <Skeleton />,]
 
 const btnList = buttons.map(button =>{
   return <Entry key={button.id} entry={button} element = {btnElementArray[button.id - 1]} />
@@ -52,7 +53,7 @@ const navList = sections.map( section => (
 
 if(page === 'home'){list = <Purpose />}
 if(page === 'buttons'){list = btnList}
-if(page === 'blocks'){list = blockList}
+if(page === 'images'){list = blockList}
 if(page === 'tabs'){list = tabList}
 if(page === 'errors'){list = errsList}
 if(page === 'loading'){list = loadList}
@@ -60,7 +61,7 @@ if(page === 'loading'){list = loadList}
   return (
     <div>
       <Header />
-      <div className=" grid grid-cols-3 grid-rows-2 sm:grid-cols-6 sm:grid-rows-1 p-2 mx-auto md:max-w-xl justify-items-center">
+      <div className=" grid grid-cols-3 grid-rows-2 sm:grid-cols-6 sm:grid-rows-1 p-2 mx-auto md:max-w-3xl justify-items-center">
         {navList}
       </div>
       <hr />
