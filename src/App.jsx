@@ -1,7 +1,5 @@
-import { buttons } from './components/entries/buttons.js'
-import { tabs } from './components/entries/tabs.js'
-import { blocks } from './components/entries/blocks.js'
-import { useState } from 'react'
+import { buttons, tabs, blocks, errs, loading } from './components/entries/entries.js'
+import { useState, useEffect } from 'react'
 import Header from './components/header'
 import Purpose from './components/home'
 import Entry from './components/entry'
@@ -16,13 +14,20 @@ import Bold from './components/element/tabs/bold.jsx'
 import Underline from './components/element/tabs/underline.jsx'
 import Info from './components/element/blocks/info.jsx'
 import Blur from './components/element/blocks/blur.jsx'
+import Spinner from './components/element/loads/spinner.jsx'
+import NotFound from './components/element/errs/notFound.jsx'
 
 function App() {
   const [page, setPage] = useState('home')
+  const [active, setActive] = useState('home')
   let list
+  let key = 0;
+  const sections = ['home','buttons','blocks','tabs','errors','loading']
   const btnElementArray = [<Trash />, <Add />, <Claim />, <Submit />, <Cta />]
   const tabElementArray = [<Highlight />,<Bold />,<Underline />] 
   const blockElementArray = [<Info />,<Blur />]
+  const errElementArray = [<NotFound />,]
+  const loadElementArray = [<Spinner />,]
 
 const btnList = buttons.map(button =>{
   return <Entry key={button.id} entry={button} element = {btnElementArray[button.id - 1]} />
@@ -33,20 +38,30 @@ const blockList = blocks.map(block =>{
 const tabList = tabs.map(tab =>{
   return <Entry key={tab.id} entry={tab} element = {tabElementArray[tab.id-1]} />
 })
+const errsList = errs.map( err => {
+  return <Entry key={err.id} entry={err} element={errElementArray[err.id-1]} />
+})
+const loadList = loading.map( load => {
+  return <Entry key={load.id} entry={load} element={loadElementArray[load.id-1]} />
+})
+const navList = sections.map( section => (
+  <button key={key++} className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => {setPage(section); setActive(section)}}>
+    {section}
+  </button>
+))
 
 if(page === 'home'){list = <Purpose />}
 if(page === 'buttons'){list = btnList}
 if(page === 'blocks'){list = blockList}
 if(page === 'tabs'){list = tabList}
+if(page === 'errors'){list = errsList}
+if(page === 'loading'){list = loadList}
 
   return (
     <div>
       <Header />
-      <div className=" grid grid-cols-4 p-2 mx-auto md:max-w-lg justify-items-center">
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('home')}>Home</button>
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('buttons')}>Buttons</button>
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('blocks')}>Blocks</button>
-      <button className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => setPage('tabs')}>Tabs</button>
+      <div className=" grid grid-cols-3 grid-rows-2 sm:grid-cols-6 sm:grid-rows-1 p-2 mx-auto md:max-w-xl justify-items-center">
+        {navList}
       </div>
       <hr />
       {list}
