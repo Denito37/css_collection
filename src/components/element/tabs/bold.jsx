@@ -3,7 +3,7 @@ export default function Bold(){
     return(
         <>
             <p className="hover:font-bold">
-                Tab2
+                Tab3
             </p>
         </>
     )

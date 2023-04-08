@@ -10,8 +10,10 @@ import Claim from './components/element/buttons/claim.jsx'
 import Submit from './components/element/buttons/submit.jsx'
 import Cta from './components/element/buttons/cta.jsx'
 import Highlight from './components/element/tabs/highlight.jsx'
+import Inverse from './components/element/tabs/inverse.jsx'
 import Bold from './components/element/tabs/bold.jsx'
 import Underline from './components/element/tabs/underline.jsx'
+import Border from './components/element/tabs/border.jsx'
 import Info from './components/element/blocks/info.jsx'
 import Blur from './components/element/blocks/blur.jsx'
 import Spinner from './components/element/loads/spinner.jsx'
@@ -25,7 +27,7 @@ function App() {
   let key = 0;
   const sections = ['home','buttons','images','tabs','errors','loading']
   const btnElementArray = [<Trash />, <Add />, <Claim />, <Submit />, <Cta />]
-  const tabElementArray = [<Highlight />,<Bold />,<Underline />] 
+  const tabElementArray = [<Highlight />,<Inverse />,<Bold />,<Underline />, <Border />] 
   const blockElementArray = [<Info />,<Blur />]
   const errElementArray = [<NotFound />,]
   const loadElementArray = [<Spinner />, <Skeleton />,]
