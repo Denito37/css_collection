@@ -2,9 +2,9 @@
 export default function Entry({entry, element}){
     return(
         <article className="p-4 my-12 mx-6 grid place-content-center">
-            <p className=" text-center text-lg p-2">
+            {entry.intro && <p className=" mx-auto max-w-[60ch] text-lg p-6 first-letter:text-5xl">
                 {entry.intro}
-            </p> 
+            </p> }
             <h2 className="text-4xl text-center md:text-left font-bold p-4">
                 {entry.title}
             </h2>

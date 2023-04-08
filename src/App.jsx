@@ -48,7 +48,7 @@ const loadList = loading.map( load => {
   return <Entry key={load.id} entry={load} element={loadElementArray[load.id-1]} />
 })
 const navList = sections.map( section => (
-  <button key={key++} className=" p-4 rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => {setPage(section); setActive(section)}}>
+  <button key={key++} className=" p-4 capitalize rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => {setPage(section); setActive(section)}}>
     {section}
   </button>
 ))

@@ -1,7 +1,10 @@
 export const buttons = [
     {
         id:1,
-        intro:'',
+        intro:`Buttons are one of the most common components in any application
+                and having them be visually striking is important to catch the user
+                attention. Each entry on this page showcases different ways to design
+                a button for different type of actions. `,
         title:"Trash Button",
         description:`Good to use for actions common in an application such as deleting your work.`,
         code: `
@@ -89,10 +92,12 @@ export const buttons = [
 export const tabs = [
     {
         id:1,
-        intro:'',
+        intro:`Tabs are very useful when u have a large amount of related content &
+                it's a good idea to divide them into different tabs. The following examples
+                could also be used to give your links a bit of visual flair when the user hover
+                over one.`,
         title:"Higlight Tab ",
-        description:`When u have a large amount of related content it could be a good idea to divide them into different tabs.
-                    If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
+        description:`If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
         code: 
         `
 .one{
@@ -107,8 +112,7 @@ export const tabs = [
     {
         id:2,
         title:`Inverse Tab`,
-        description:`When u have a large amount of related content it could be a good idea to divide them into different tabs.
-        If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
+        description:`If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
         code:`
 .two{
     border-radius: .5rem;
@@ -124,8 +128,7 @@ export const tabs = [
     {
         id:3,
         title:"Bold Tab",
-        description:`When u have a large amount of related content it could be a good idea to divide them into different tabs.
-                    If you want to give contrast to hovered links incresing the font-weight is the simplest way possible.`,
+        description:`If you want to give contrast to hovered links incresing the font-weight is the simplest way possible.`,
         code: `
 .three:hover{
     font-weight: 800;
@@ -134,8 +137,7 @@ export const tabs = [
     {
         id:4,
         title:"Underline Tab",
-        description:`When u have a large amount of related content it could be a good idea to divide them into different tabs.
-                    This way may take a lot more lines of CSS but it gives you a lot more freedom in creating animations for the hover state.`,
+        description:`This way may take a lot more lines of CSS but it gives you a lot more freedom in creating animations for the hover state.`,
         code: `
 .four{
     border-radius: 0;
@@ -160,8 +162,7 @@ export const tabs = [
     {
         id:5,
         title:`Border Tab`,
-        description:`When u have a large amount of related content it could be a good idea to divide them into different tabs.
-                    Using a border can be a good visual to show what the user that the element they are currently hovering
+        description:`Using a border can be a good visual to show what the user that the element they are currently hovering
                     is interactable`,
         code:`
 .five{
@@ -181,8 +182,10 @@ export const tabs = [
 export const blocks = [
     {
         id:1,
-        intro:'',
-        title:"Info Block",
+        intro:`Images are great assets to gain the interest of users as a wall of text would
+                both overwhelm and bore most people. These following entries will show
+                interesting way to use images to get the user attention to where you want it the most. `,
+        title:"Info Image",
         description:`Use to connect a blurb of info that's related to an image.`,
         code: `
 .infoBlock{
@@ -200,7 +203,7 @@ export const blocks = [
     },
     {
         id:2,
-        title:"Blur Block",
+        title:"Blur Image",
         description:`A fun way to bring attention to an element you want the user to intereact with.`,
         code: `
 .blurBlock img{
@@ -217,7 +220,9 @@ export const blocks = [
 export const errs = [
     {
         id:1,
-        intro:'',
+        intro:`Errors are bound to happen either due to user's input or server errors
+                & it is very important to let the user know what's wrong. The following entries
+                will show different ways to present the error message based on the type of error. `,
         title: `Error Message`,
         description:` Use as a pop-up element to let the user know that an error has occured. Ideally there would be a different error message based on what caused the error.`,
         code:`
@@ -252,7 +257,10 @@ keyframes pulse {
 export const loading = [
     {
         id:1,
-        intro:'',
+        intro:`Loading are also bound to happen especially when your application involves fetching data
+                from a server & when the user's connection is slow. In these situations you will want to 
+                let the user know that they only have to wait a bit for your application to display the 
+                content & the following entries shows different ways to show that content is loading. `,
         title:`Spinner Loading`,
         description:` A simple element to place while data is being loaded. Useful to use while fetching data. Note: with tailwind this animation only takes one class to implement.`,
         code:`
