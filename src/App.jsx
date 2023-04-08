@@ -1,7 +1,7 @@
 import { buttons, tabs, blocks, errs, loading } from './components/entries/entries.js'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Header from './components/header'
-import Purpose from './components/home'
+import Home from './components/home'
 import Entry from './components/entry'
 import Footer from './components/footer'
 import Trash from './components/element/buttons/trash.jsx'
@@ -53,7 +53,7 @@ const navList = sections.map( section => (
   </button>
 ))
 
-if(page === 'home'){list = <Purpose />}
+if(page === 'home'){list = <Home />}
 if(page === 'buttons'){list = btnList}
 if(page === 'images'){list = blockList}
 if(page === 'tabs'){list = tabList}
