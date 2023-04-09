@@ -16,7 +16,7 @@ export const buttons = [
                 transform .2s ease-in;
 }
 .trash:hover{
-    background-color: var(--acc-clr);
+    background-color: rgb(14 165 233);
     transform: scale(1);
 }`,
     },
@@ -39,9 +39,9 @@ export const buttons = [
         description:`Visually appealing way to tell the user that you can intereact with this element`,
         code: `
 .claim{
-    background-color: #222;
-    border: solid 2px #222;
-    color: #eee;
+    background-color: rgb(113 113 122);
+    border: solid 2px white;
+    color: white;
     padding: 1.5rem 3rem;
     border-radius: 1rem;
     transition: background-color .2s ease-in;
@@ -58,14 +58,14 @@ export const buttons = [
         code: `
 .submit{
     background-color: transparent;
-    border: solid 1px #222;
+    border: solid 1px white;
     color: #eee;
     padding: 1.5rem 2.5rem;
     border-radius: 1rem;
     transition: border .2s ease-in;
 }
 .submit:hover{
-    border: 4px solid #222;
+    border: 4px solid white;
 }`,
     },
     {
@@ -74,7 +74,7 @@ export const buttons = [
         description:`Put call to action content activation on click such as a contact component`,
         code:`
 .cta{
-    background-color: #252525;
+    background-color: rgb(51 65 85);
     padding: 1rem 2rem;
     border-radius: 1rem;
     font-weight: 800;
@@ -84,7 +84,7 @@ export const buttons = [
 }
 .cta:hover{
     transform: scale(1.25);
-    color: var(--acc-clr)
+    color: rgb(167 139 250)
 }`,
     },
 ]
@@ -115,13 +115,15 @@ export const tabs = [
         description:`If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
         code:`
 .two{
+    background-color: rgb(39 39 42);
+    color: rgb(241 245 249);
     border-radius: .5rem;
     padding: 1rem;
     transition: background-color .2s ease-in;
 }
 .two:focus,.one:hover {
-    background-color: #f1f5f9;
-    color: #27272a;
+    background-color: rgb(241 245 249);
+    color: rgb(39 39 42);
 }
         `,
     },
@@ -153,7 +155,7 @@ export const tabs = [
 .four:hover::after,.four:focus::after{
     width: 100%;
     height: 2px;
-    background: var(--acc-clr);
+    background-color: rgb(167 139 250);
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -169,11 +171,11 @@ export const tabs = [
     border: solid 2px transparent;
     border-radius: .5rem;
     padding: 1rem 2rem;
-    background-color: #27272a;
+    background-color: rgb(39 39 42);
     transition: border 1.5s ease-in;
 }
 .five:hover{
-    border: solid 2px #f1f5f9;
+    border: solid 2px rgb(241 245 249);
 }
         `,
     }

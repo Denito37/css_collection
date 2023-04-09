@@ -48,7 +48,7 @@ const loadList = loading.map( load => {
   return <Entry key={load.id} entry={load} element={loadElementArray[load.id-1]} />
 })
 const navList = sections.map( section => (
-  <button key={key++} className=" p-4 capitalize rounded-2xl w-fit transition-all duration-200 hover:bg-slate-200 hover:text-black" onClick={() => {setPage(section); setActive(section)}}>
+  <button key={key++} className=" p-4 mx-2 capitalize rounded-2xl min-w-[6rem] w-fit transition-colors hover:bg-slate-200 hover:text-black" onClick={() => {setPage(section); setActive(section)}}>
     {section}
   </button>
 ))
@@ -63,7 +63,7 @@ if(page === 'loading'){list = loadList}
   return (
     <div>
       <Header />
-      <div className=" grid grid-cols-3 grid-rows-2 sm:grid-cols-6 sm:grid-rows-1 p-2 mx-auto md:max-w-3xl justify-items-center">
+      <div className=" overflow-x-scroll flex p-2 mx-auto md:max-w-3xl justify-items-center">
         {navList}
       </div>
       <hr />
