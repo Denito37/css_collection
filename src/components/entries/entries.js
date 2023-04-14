@@ -1,12 +1,13 @@
 export const buttons = [
     {
         id:1,
+        tag:`button`,
         intro:`Buttons are one of the most common components in any application
-                and having them be visually striking is important to catch the user
-                attention. Each entry on this page showcases different ways to design
-                a button for different type of actions. `,
+                & having them be visually striking is important to catch the user
+                attention. Each entry on this page showcases ways to design
+                a button for different types of actions. `,
         title:"Trash Button",
-        description:`Good to use for actions common in an application such as deleting your work.`,
+        description:`Good to use for actions common in an application such as deleting something.`,
         code: `
 .trash{
     background-color: transparent;
@@ -22,6 +23,7 @@ export const buttons = [
     },
     {
         id:2,
+        tag:`button`,
         title:"Add Button",
         description:`Good way to use to tell the user that you can intereact with this element with a small amount of CSS`,
         code: `
@@ -35,6 +37,7 @@ export const buttons = [
     },
     {
         id:3,
+        tag:`button`,
         title:"Claim Button",
         description:`Visually appealing way to tell the user that you can intereact with this element`,
         code: `
@@ -52,9 +55,10 @@ export const buttons = [
     },
     {
         id:4,
+        tag:`button`,
         title:"Submit Button",
         description:`Alternative way to use to tell the user that you can intereact with this element.
-                    Note: Can mess up the layout of your site if not used carefully`,
+                    Note: Could mess up the layout of your site if not used carefully`,
         code: `
 .submit{
     background-color: transparent;
@@ -70,8 +74,9 @@ export const buttons = [
     },
     {
         id:5,
+        tag:`button`,
         title:"CTA Button",
-        description:`Put call to action content activation on click such as a contact component`,
+        description:`Use for call to action content such as a contact/message component`,
         code:`
 .cta{
     background-color: rgb(51 65 85);
@@ -92,10 +97,10 @@ export const buttons = [
 export const tabs = [
     {
         id:1,
+        tag:`tab`,
         intro:`Tabs are very useful when u have a large amount of related content &
-                it's a good idea to divide them into different tabs. The following examples
-                could also be used to give your links a bit of visual flair when the user hover
-                over one.`,
+                you want to divide them up into sections. The following examples could also 
+                be used to give your links a bit of visual flair when the user hover over one.`,
         title:"Higlight Tab ",
         description:`If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
         code: 
@@ -111,6 +116,7 @@ export const tabs = [
     },
     {
         id:2,
+        tag:`tab`,
         title:`Inverse Tab`,
         description:`If you want the user to know what tab they are on using, having a high contrast between the active & the inactive tabs would be helpful.`,
         code:`
@@ -129,8 +135,9 @@ export const tabs = [
     },
     {
         id:3,
+        tag:`tab`,
         title:"Bold Tab",
-        description:`If you want to give contrast to hovered links incresing the font-weight is the simplest way possible.`,
+        description:`If you want to give contrast to hovered links increasing the font-weight is the simplest way possible.`,
         code: `
 .three:hover{
     font-weight: 800;
@@ -138,6 +145,7 @@ export const tabs = [
     },
     {
         id:4,
+        tag:`tab`,
         title:"Underline Tab",
         description:`This way may take a lot more lines of CSS but it gives you a lot more freedom in creating animations for the hover state.`,
         code: `
@@ -163,9 +171,9 @@ export const tabs = [
     },
     {
         id:5,
+        tag:`tab`,
         title:`Border Tab`,
-        description:`Using a border can be a good visual to show what the user that the element they are currently hovering
-                    is interactable`,
+        description:`Using a border can be a good visual to show the user that the element they are currently hovering over is interactable`,
         code:`
 .five{
     border: solid 2px transparent;
@@ -184,6 +192,7 @@ export const tabs = [
 export const blocks = [
     {
         id:1,
+        tag:`image`,
         intro:`Images are great assets to gain the interest of users as a wall of text would
                 both overwhelm and bore most people. These following entries will show
                 interesting way to use images to get the user attention to where you want it the most. `,
@@ -205,6 +214,7 @@ export const blocks = [
     },
     {
         id:2,
+        tag:`image`,
         title:"Blur Image",
         description:`A fun way to bring attention to an element you want the user to intereact with.`,
         code: `
@@ -222,8 +232,9 @@ export const blocks = [
 export const errs = [
     {
         id:1,
+        tag:`error`,
         intro:`Errors are bound to happen either due to user's input or server errors
-                & it is very important to let the user know what's wrong. The following entries
+                & it's very important to let the user know what's wrong. The following entries
                 will show different ways to present the error message based on the type of error. `,
         title: `Error Message`,
         description:` Use as a pop-up element to let the user know that an error has occured. Ideally there would be a different error message based on what caused the error.`,
@@ -259,10 +270,11 @@ keyframes pulse {
 export const loading = [
     {
         id:1,
-        intro:`Loading are also bound to happen especially when your application involves fetching data
-                from a server & when the user's connection is slow. In these situations you will want to 
-                let the user know that they only have to wait a bit for your application to display the 
-                content & the following entries shows different ways to show that content is loading. `,
+        tag:`loading`,
+        intro:`Loading is also bound to happen especially when your application involves fetching data
+                from a server & the user's connection is slow. You would want to let the user know that 
+                they only have to wait for your application to display the content & the following 
+                entries shows different ways to show that content is loading. `,
         title:`Spinner Loading`,
         description:` A simple element to place while data is being loaded. Useful to use while fetching data. Note: with tailwind this animation only takes one class to implement.`,
         code:`
@@ -277,8 +289,9 @@ export const loading = [
     },
     {
         id:2,
+        tag:`loading`,
         title:`Skeleton Loading`,
-        description:`A calming visual to have for the user as the components load in. The skeleton layout should match your website's layout.`,
+        description:`A calming visual to have for the user as the components load in. The skeleton layout should match your website's layout. Note: with tailwind this animation only takes one class to implement.`,
         code:`
 .container{
     display: grid;

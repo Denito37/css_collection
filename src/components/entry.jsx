@@ -4,7 +4,7 @@ export default function Entry({entry, element}){
         <article className="p-4 my-6 mx-6 grid place-content-center">
             {
             entry.intro && 
-            <p className=" mx-auto max-w-[60ch] text-lg px-4 mt-6 mb-10 first-letter:text-5xl">
+            <p className=" mx-auto px-4 mt-6 mb-10 max-w-[60ch] text-lg first-letter:text-5xl">
                 {entry.intro}
             </p> 
             }
@@ -20,7 +20,7 @@ export default function Entry({entry, element}){
                 </p>
             </div>
             <code>
-                <pre className="py-4 px-8 mx-4 bg-neutral-800 border-2 rounded-2xl max-w-[80vw] sm:w-full md:max-w-3xl h-72 overflow-scroll">
+                <pre className="py-4 px-8 mx-4 bg-neutral-800 border-2 rounded-2xl max-w-[80vw] sm:w-full md:max-w-3xl overflow-scroll">
                     {entry.code}
                 </pre>
             </code>
