@@ -1,5 +1,7 @@
 import orange from '/orange.jpg'
 import egg from '/egg.jpg'
+import cherry from '/cherry.jpg'
+import cone from '/cone.jpg'
 export function Info(){
     return(
         <div className=' relative rounded-2xl w-[150px] h-[150px]'>
@@ -11,7 +13,18 @@ export function Info(){
 export function Blur(){
     return(
         <>
-            <img className=' rounded-2xl blur-sm sepia-[25%] transition-[filter] duration-200 ease-in hover:blur-0 hover:sepia-0' src={egg} width={"150px"} height={"150px"} alt=" egg picture " />
+            <img className=' rounded-2xl blur-sm sepia-[25%] transition-[filter] duration-200 ease-in hover:blur-0 hover:sepia-0' 
+            src={egg} width={"150px"} height={"150px"} alt=" egg picture " />
         </>
+    )
+}
+export function PopUp(){
+    return(
+        <div className=' grid grid-cols-2 gap-2'>
+            <img className=' rounded-2xl hover:scale-[1.4] transition-transform aspect-square' src={orange} alt="orange" width={"125px"} height={"125px"} />
+            <img className=' rounded-2xl hover:scale-[1.4] transition-transform aspect-square' src={egg} alt="egg" width={"125px"} height={"125px"} />
+            <img className=' rounded-2xl hover:scale-[1.4] transition-transform aspect-square' src={cherry} alt="egg" width={"125px"} height={"125px"} />
+            <img className=' rounded-2xl hover:scale-[1.4] transition-transform aspect-square' src={cone} alt="orange" width={"125px"} height={"125px"} />
+        </div>
     )
 }

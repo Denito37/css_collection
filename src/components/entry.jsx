@@ -1,4 +1,4 @@
-
+import Copy from '/public/copy.svg'
 export default function Entry({entry, element}){
     return(
         <article className="p-4 my-6 mx-6 grid place-content-center">
@@ -20,8 +20,13 @@ export default function Entry({entry, element}){
                 </p>
             </div>
             <code>
-                <pre className="py-4 px-8 mx-4 bg-neutral-800 border-2 rounded-2xl max-w-[80vw] sm:w-full md:max-w-3xl overflow-scroll">
+                <pre className=" relative md:my-4 py-4 px-8 mx-4 bg-neutral-800 border-2 rounded-xl max-w-[80vw] sm:w-full md:max-w-3xl overflow-scroll">
                     {entry.code}
+                    <button 
+                        onClick={() => {navigator.clipboard.writeText(entry.code)}} 
+                        className=' p-2 bg-neutral-800 rounded-xl absolute top-0 right-0 transition-[filter] hover:brightness-200 '>
+                        <img src={Copy} alt="copy" />
+                    </button>
                 </pre>
             </code>
         </article>

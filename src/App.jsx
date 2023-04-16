@@ -6,7 +6,7 @@ import Entry from './components/entry'
 import Footer from './components/footer'
 import { Trash, Add, Claim, Submit, Cta } from './components/elements/buttons.jsx'
 import { Highlight, Inverse, Bold, Underline, Border } from './components/elements/tabs.jsx'
-import { Info,Blur } from './components/elements/images.jsx'
+import { Info,Blur, PopUp } from './components/elements/images.jsx'
 import { Spinner, Skeleton} from './components/elements/loadings.jsx'
 import { ErrorMessage } from './components/elements/errors.jsx'
 
@@ -18,7 +18,7 @@ function App() {
   const pages = ['home','buttons','images','tabs','errors','loading']
   const btnElementArray = [<Trash />, <Add />, <Claim />, <Submit />, <Cta />]
   const tabElementArray = [<Highlight />,<Inverse />,<Bold />,<Underline />, <Border />] 
-  const blockElementArray = [<Info />,<Blur />]
+  const blockElementArray = [<Info />,<Blur />,<PopUp />]
   const errElementArray = [<ErrorMessage />,]
   const loadElementArray = [<Spinner />, <Skeleton />,]
 

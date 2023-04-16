@@ -199,14 +199,14 @@ export const blocks = [
         title:"Info Image",
         description:`Use to connect a blurb of info that's related to an image.`,
         code: `
-.infoBlock{
+.info{
     position: relative;
     width: 150px;
     height: 150px;
     margin: 1rem auto;
     border-radius: 1rem;
 }
-.infoBlock p{
+.info p{
     text-align: center;
     position: absolute;
     bottom: 20%;
@@ -218,14 +218,34 @@ export const blocks = [
         title:"Blur Image",
         description:`A fun way to bring attention to an element you want the user to intereact with.`,
         code: `
-.blurBlock img{
+.blur img{
     border-radius: 1rem;
     filter: blur(4px) sepia(25%);
     transition: filter .2s ease-in;
 }
-.blurBlock img:hover{
+.blur img:hover{
     filter: blur(0px) sepia(0%);
 }`,
+    },
+    {
+        id:3,
+        tag:`image`,
+        title:"PopUp Image",
+        description:`When you want to condense several images in a small container you can use the transform scale property to allow the user to enlarge the image without breaking your layout.`,
+        code:`
+.container {
+    display:grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.popUp img{
+    border-radius: 1rem;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.popUp img:hover{
+    transform: scale(1.4);
+}
+        `
     },
 ]
 
