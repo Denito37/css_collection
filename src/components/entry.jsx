@@ -1,4 +1,4 @@
-import Copy from '/public/copy.svg'
+import Copy from '/copy.svg'
 export default function Entry({entry, element}){
     return(
         <article className="p-4 my-6 mx-6 grid place-content-center">
