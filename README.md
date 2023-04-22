@@ -1,5 +1,8 @@
+A collection of components that showcases the power of CSS
+
 **Built With**
 - React JS
+- React Router
 - Tailwind CSS
 
 **Features**

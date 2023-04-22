@@ -1,6 +1,6 @@
 import CSS from '/css-icon.svg'
 import CC from '/CC.svg'
-export default function Home(){
+export default function HomeCom(){
 
     return(
         <article className=" my-12 md:max-w-5xl md:mx-auto">
