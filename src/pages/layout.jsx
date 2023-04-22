@@ -1,12 +1,14 @@
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { Outlet, Link } from "react-router-dom"
+
 export default function Layout(){
+
     return(
         <div>
             <Header />
             <nav>
-                <ul className=" flex p-4 justify-evenly max-w-3xl mx-auto">
+                <ul className=" flex gap-x-2 p-4 justify-evenly max-w-3xl mx-auto overflow-x-scroll">
                     <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
                         <Link to='/'>Home</Link>
                     </li>

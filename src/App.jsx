@@ -8,7 +8,6 @@ import Error from './pages/error.jsx'
 import Loading from './pages/loading.jsx'
 function App() {
   return (
-    <div>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
@@ -21,7 +20,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
   )
 }
 
