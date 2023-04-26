@@ -2,7 +2,7 @@ export default function About(){
 
     return(
         <article className=" my-12 md:max-w-5xl md:mx-auto">
-            <section className="  my-4 items-center justify-items-center flex flex-col md:p-8">
+            <div className="  my-4 items-center justify-items-center flex flex-col md:p-8">
                     <h2 className=" p-2 text-2xl text-center font-bold">
                         About
                     </h2>
@@ -15,7 +15,7 @@ export default function About(){
                         with CSS & how to use it well enough to make a 
                         good-looking website. 
                     </p>
-            </section>
+            </div>
         </article>
     )
 }

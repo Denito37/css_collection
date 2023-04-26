@@ -5,7 +5,7 @@ import { Outlet, Link } from "react-router-dom"
 export default function Layout(){
 
     return(
-        <div>
+        <>
             <Header />
             <nav>
                 <ul className=" grid grid-cols-3 grid-rows-2 sm:grid-rows-1 sm:grid-cols-6 justify-items-center gap-x-2 p-4 max-w-3xl mx-auto overflow-x-scroll">
@@ -32,6 +32,6 @@ export default function Layout(){
             <hr />
             <Outlet />
             <Footer />
-        </div>
+        </>
     )
 }

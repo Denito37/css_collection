@@ -3,12 +3,13 @@ import { errs } from "../components/entries/entries"
 import { ErrorMessage } from '../components/elements/errors.jsx'
 export default function Error(){
     const errorElements = [<ErrorMessage />]
+    let placement = 0
     const list = errs.map(err =>{
-        return <Entry key={err.id} entry={err} element={errorElements[err.id-1]} />
+        return <Entry key={err.id} entry={err} element={errorElements[placement++]} />
     })
     return(
-        <>
-        {list}
-        </>
+        <section>
+            {list}
+        </section>
     )
 }

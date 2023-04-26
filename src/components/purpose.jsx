@@ -2,7 +2,7 @@ export default function Purpose(){
 
     return(
         <article className=" my-12 md:max-w-5xl md:mx-auto">
-            <section className="  my-4 md:p-8">
+            <div className="  my-4 md:p-8">
                 <h2 className=" text-2xl text-center font-bold">
                     How to Use
                 </h2>
@@ -13,7 +13,7 @@ export default function Purpose(){
                     & edit the values to play with the CSS & increase your understanding
                     of how each element property can make a component look & function better
                 </p>
-            </section>
+            </div>
         </article>
     )
 }
