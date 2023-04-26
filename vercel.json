@@ -1,0 +1,10 @@
+{
+    "routes":[
+        {"src":"/"," dest": "/"},
+        {"src":"/button"," dest": "/"},
+        {"src":"/tab"," dest": "/"},
+        {"src":"/image"," dest": "/"},
+        {"src":"/error"," dest": "/"},
+        {"src":"/loading"," dest": "/"}
+    ]
+}
