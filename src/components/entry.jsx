@@ -25,7 +25,7 @@ export default function Entry({entry, element}){
                     <button 
                         onClick={() => {navigator.clipboard.writeText(entry.code)}} 
                         className=' p-2 bg-neutral-800 rounded-xl absolute top-0 right-0 transition-[filter] hover:brightness-200 '>
-                        <img src={Copy} alt="copy" />
+                        <img title='Copy' src={Copy} alt="copy" />
                     </button>
                 </pre>
             </code>

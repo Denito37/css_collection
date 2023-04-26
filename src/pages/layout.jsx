@@ -8,23 +8,23 @@ export default function Layout(){
         <div>
             <Header />
             <nav>
-                <ul className=" flex gap-x-2 p-4 justify-evenly max-w-3xl mx-auto overflow-x-scroll">
-                    <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
+                <ul className=" flex gap-x-2 mx-2 p-4 justify-evenly max-w-3xl sm:mx-auto overflow-x-scroll">
+                    <li className=" p-2 underlineLink">
                         <Link to='/'>Home</Link>
                     </li>
-                    <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
+                    <li className=" p-2 underlineLink ">
                         <Link to='/button'>Buttons</Link>
                     </li>
-                    <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
+                    <li className=" p-2 underlineLink">
                         <Link to='/tab'>Tabs</Link>
                     </li>
-                    <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
+                    <li className=" p-2 underlineLink">
                         <Link to='/image'>Images</Link>
                     </li>
-                    <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
+                    <li className=" p-2 underlineLink">
                         <Link to='/error'>Errors</Link>
                     </li>
-                    <li className=" p-2 rounded-xl transition-colors hover:bg-slate-50 hover:text-zinc-900">
+                    <li className=" p-2 underlineLink">
                         <Link to='/loading'>Loading</Link>
                     </li>
                 </ul>
