@@ -4,7 +4,7 @@ export default function Entry({entry, element}){
         <article className="p-4 my-6 mx-6 grid place-content-center">
             {
             entry.intro && 
-            <p className=" mx-auto px-4 mt-6 mb-10 max-w-[60ch] text-lg first-letter:text-5xl">
+            <p className=" mx-auto px-4 my-6 max-w-[70ch] text-lg first-letter:text-5xl">
                 {entry.intro}
             </p> 
             }
@@ -25,7 +25,7 @@ export default function Entry({entry, element}){
                     <button 
                         onClick={() => {navigator.clipboard.writeText(entry.code)}} 
                         className=' p-2 bg-neutral-800 rounded-xl absolute top-0 right-0 transition-[filter] hover:brightness-200 '>
-                        <img title='Copy' src={Copy} alt="copy" />
+                        <img title='Copy' src={Copy} alt="copy" width={50} height={50} />
                     </button>
                 </pre>
             </code>

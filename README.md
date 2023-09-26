@@ -10,4 +10,10 @@ A collection of components that showcases the power of CSS
 - interactable components showcasing the css in use
 
 **Purpose**
-- Currently CSS is my favorite part of the web development process so I thought that making a site that showcases all the cool things u can do with CSS to elevate the experience of using a website. Also I can continue to add to this site as I get more experience with CSS making it a great way to keep track of my progress
+- CSS was my favorite part of the web development process when I began so I thought that making a site that showcases all the cool things u can do with CSS to elevate the experience of using a website. Also I can continue to add to this site as I get more experience with CSS making it a great way to motivate myself to continue to learn.
+
+**Technical Notes**
+- Site is fully responive looking good on desktop and phones.
+- Copy button on code examples to make it easy for users to try the css on their own prroject
+- pages are preloaded making switching between them feel instant
+- perfect score on lighthouse desktop audit

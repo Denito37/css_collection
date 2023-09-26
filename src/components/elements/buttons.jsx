@@ -3,20 +3,20 @@ import add from "/add.svg"
 export function Trash(){
     return(
         <button className="w-fit h-fit p-8 bg-transparent rounded-full scale-90 transition-all duration-200 ease-in hover:bg-sky-500 hover:scale-100">
-                <img src={trash} alt="" />
+                <img src={trash} alt="trash can icon" width={40} height={40} />
         </button>
     )
 }
 export function Add(){
     return(
         <button className="w-fit h-fit p-8 bg-transparent transition-[transform] duration-200 ease-in hover:translate-y-[-0.5rem]">
-            <img src={add} alt="" />
+            <img src={add} alt=" plus sign icon" width={40} height={40} />
         </button>
     )
 }
 export function Claim(){
     return(
-        <button className=" bg-zinc-500 py-6 px-12 w-fit h-fit border-2 rounded-2xl transition-[background-color] duration-200 ease-in hover:bg-transparent">
+        <button className=" bg-zinc-600 py-6 px-12 w-fit h-fit border-2 rounded-2xl transition-[background-color] duration-200 ease-in hover:bg-transparent">
             Claim
         </button>
     )
