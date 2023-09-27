@@ -11,9 +11,8 @@ export default function About(){
                         to showcase how a little bit of CSS
                         can greatly improve the look & feel of your website.
                         I created this site because I enjoy using
-                        CSS, but I've heard that many new developers struggle 
-                        with CSS & how to use it well enough to make a 
-                        good-looking website. 
+                        CSS, but I've heard many new developers struggle 
+                        with CSS & how to use it effectively. 
                     </p>
             </div>
         </article>
