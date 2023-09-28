@@ -14,6 +14,6 @@ A collection of components that showcases the power of CSS
 
 **Technical Notes**
 - Site is fully responive looking good on desktop and phones.
-- Copy button on code examples to make it easy for users to try the css on their own prroject
+- Copy button on code examples to make it easy for users to try the css on their own project
 - pages are preloaded making switching between them feel instant
 - perfect score on lighthouse desktop audit
