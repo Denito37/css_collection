@@ -22,15 +22,19 @@ export default function Header(){
 
     return(
         <div className="sticky top-0 z-10 bg-[#171717] glass">
-        <header className=" sm:flex my-2 mx-4 md:justify-between">
-            <img onClick={() => navigate('/')} className=' bg-blue-700 mx-auto sm:mx-0 rounded-xl shadow-[0px_15px_50px_3px_rgba(60,100,220,0.8)]' 
+        <header className=" sm:flex my-2 mx-4 sm:justify-between">
+            <div className=' grid grid-cols-3 '>
+            <img onClick={() => navigate('/')} className=' order-2 bg-blue-700 mx-auto sm:mx-0 rounded-xl shadow-[0px_15px_50px_3px_rgba(60,100,220,0.8)]' 
             src={CSS} width={75} height={75} title='Home' alt="CSS Collection" />
 
-            <button onClick={() => toggleNavItems()} className='sm:hidden'>
+            <button onClick={() => toggleNavItems()} className='sm:hidden order-1'>
                 {showNav == false ?
                 <img src={menu} width={50} height={50} alt="open menu button" title='open menu' />
                  : <img src={close} width={50} height={50} alt='close menu button' title='close menu'  />}
             </button>
+
+            </div>
+
             <div className={`${showNav == true ? 'block' : 'hidden'}`}>
             <MobileNav />
             </div>
