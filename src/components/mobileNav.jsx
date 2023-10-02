@@ -2,8 +2,9 @@
 import { Link } from "react-router-dom"
 export default function MobileNav (){
     return(
-        <nav className="">
-                <ul className=" sm:hidden bg-[#171717] p-8 max-w-[80vw]  h-[100vh]">
+        
+        <nav className=" absolute left-0   " >
+                <ul className=" glassMenu sm:hidden bg-[#171717] p-8 min-w-[80vw] h-[100vh]">
                     <li className=" text-2xl w-fit p-2 my-2 underlineLink ">
                         <Link to='/button'>Buttons</Link>
                     </li>
@@ -21,5 +22,6 @@ export default function MobileNav (){
                     </li>
                 </ul>
             </nav>
+            
     )
 }
